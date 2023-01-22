@@ -83,9 +83,6 @@ dependencies {
 	implementation 'net.kyori:adventure-api:4.11.0'
 	implementation 'net.kyori:adventure-text-minimessage:4.11.0'
 
-	implementation project(":version")
-	implementation project(":version_old")
-	implementation project(":version_new")
 }
 
 processResources {
