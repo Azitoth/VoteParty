@@ -28,7 +28,7 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
       - name: Gradle Test Build
-        run: ./gradlew clean shadowJar
+        run: ./gradlew build
       - name: Gradle Publish Build
         run: ./gradlew publishToMavenLocal
       - name: Create staging dir and cp VoteParty to dir
