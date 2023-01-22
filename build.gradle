@@ -93,7 +93,7 @@ publishing {
 	publications {
 		maven(MavenPublication) {
 			groupId = 'me.clip'
-			artifactId = 'voteparty'
+			artifactId = 'VoteParty'
 			version = '2.34'
 
 			from components.java
