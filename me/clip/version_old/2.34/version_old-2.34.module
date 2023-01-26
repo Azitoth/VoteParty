@@ -1,0 +1,87 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "me.clip",
+    "module": "version_old",
+    "version": "2.34",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "version_old-2.34.jar",
+          "url": "version_old-2.34.jar",
+          "size": 3737,
+          "sha512": "01e31b4f35837f085048a593df044d84fdd61e65704f8dd37058990f9ac881cdcc54c5715f70d14f2416cf176a9bb70e7ebeee14c5bc228799b2fad4c45d183a",
+          "sha256": "c1456fcb7bebc003f8098bde1e9bcee025b41d87abda03b0cdcfc6551c9b6727",
+          "sha1": "ead7c84725005e801433d2191316cdd5f7c108e6",
+          "md5": "d53bd9b597fea4f2831f2963dae754f3"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "me.clip",
+          "module": "version",
+          "version": {
+            "requires": "2.34"
+          }
+        },
+        {
+          "group": "org.inventivetalent",
+          "module": "particleapi",
+          "version": {
+            "requires": "+"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "version_old-2.34.jar",
+          "url": "version_old-2.34.jar",
+          "size": 3737,
+          "sha512": "01e31b4f35837f085048a593df044d84fdd61e65704f8dd37058990f9ac881cdcc54c5715f70d14f2416cf176a9bb70e7ebeee14c5bc228799b2fad4c45d183a",
+          "sha256": "c1456fcb7bebc003f8098bde1e9bcee025b41d87abda03b0cdcfc6551c9b6727",
+          "sha1": "ead7c84725005e801433d2191316cdd5f7c108e6",
+          "md5": "d53bd9b597fea4f2831f2963dae754f3"
+        }
+      ]
+    }
+  ]
+}

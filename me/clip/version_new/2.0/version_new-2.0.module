@@ -1,0 +1,80 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "me.clip",
+    "module": "version_new",
+    "version": "2.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "version_new-2.0.jar",
+          "url": "version_new-2.0.jar",
+          "size": 4337,
+          "sha512": "9718cd194d0255fc5ee2c1695bd17e5b9d054f8d467d415a3dbb4ac4e617ccfb5a48d3e6dc62661284c9dd9de8b464932be47d2b791fbb7245a9cb09f830a5e5",
+          "sha256": "c9ae2d56b4263858b1ecf944a1161d12347d3280776801564fabd1e72728b20e",
+          "sha1": "dd6920e74099d12de84ca7927048b4281a86db9d",
+          "md5": "05258fafb5cb2b3084cd894669f9fe5b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.20"
+          }
+        },
+        {
+          "group": "me.clip",
+          "module": "version",
+          "version": {
+            "requires": "2.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "version_new-2.0.jar",
+          "url": "version_new-2.0.jar",
+          "size": 4337,
+          "sha512": "9718cd194d0255fc5ee2c1695bd17e5b9d054f8d467d415a3dbb4ac4e617ccfb5a48d3e6dc62661284c9dd9de8b464932be47d2b791fbb7245a9cb09f830a5e5",
+          "sha256": "c9ae2d56b4263858b1ecf944a1161d12347d3280776801564fabd1e72728b20e",
+          "sha1": "dd6920e74099d12de84ca7927048b4281a86db9d",
+          "md5": "05258fafb5cb2b3084cd894669f9fe5b"
+        }
+      ]
+    }
+  ]
+}
