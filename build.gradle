@@ -83,10 +83,26 @@ dependencies {
 	implementation 'net.kyori:adventure-api:4.11.0'
 	implementation 'net.kyori:adventure-text-minimessage:4.11.0'
 
+	implementation project(":version")
+	implementation project(":version_old")
+	implementation project(":version_new")
 }
 
 processResources {
 	filter ReplaceTokens, tokens: [version: version]
+}
+
+subprojects {
+	apply plugin: 'maven-publish'
+	publishing {
+		publications {
+			maven(MavenPublication) {
+				groupId = 'me.clip'
+
+				from components.java
+			}
+		}
+	}
 }
 
 publishing {

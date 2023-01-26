@@ -10,7 +10,7 @@ repositories {
 
 dependencies {
 	implementation project(":version")
-	implementation "org.inventivetalent:particleapi:+"
+	implementation "org.inventivetalent:particleapi:2.1.1"
 	
 	compileOnly("org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT") {
 		force = true
